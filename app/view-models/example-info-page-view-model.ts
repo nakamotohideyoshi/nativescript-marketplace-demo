@@ -2,10 +2,7 @@ import observable = require("data/observable");
 import examplesVM = require("./examples-model");
 
 export class ExampleViewModel extends observable.Observable implements examplesVM.Example {
-    isSelected: boolean;
-    constructor(private _example: examplesVM.Example) {
-        super();
-    }
+  
 
     get title(): string {
         return this._example.title;
